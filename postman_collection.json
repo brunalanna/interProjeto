@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "717d9f47-7eff-4437-af0f-af1f0c7f0fee",
+		"name": "Desafio Digito Unico - Banco Inter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Calcular dígito único - sequencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"numero\": \"20\",\r\n        \"multiplo\": \"2\",\r\n        \"usuario\":{ \r\n            \"id\": 1,\r\n        \t\"nome\": \"Amanda\", \r\n        \t\"email\":\"Amanda@gmail.com\"\r\n        }\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/digito/calcular-sequencia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"digito",
+						"calcular-sequencia"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular dígito único",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"numero\": \"20\",\r\n        \"usuario\":{ \r\n            \"id\": 1,\r\n        \t\"nome\": \"Bruna\", \r\n        \t\"email\":\"bruna@gmail.com\"\r\n        }\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/digito/calcular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"digito",
+						"calcular"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Amanda\",\r\n    \"email\":\"Amanda@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuario/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"save"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuario/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"delete",
+						"1"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza dados do usuário cadastrado",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 1,\r\n        \"nome\": \"Felippe Augusto Alacoque\",\r\n        \"email\": \"felippealacoque@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar digitos por usuário",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/digito/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"digito",
+						"1"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar usuários por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"2"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos Usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"2"
+					]
+				},
+				"description": "Calcula o dígito único de um número passado e da quantidade de repetições definida"
+			},
+			"response": []
+		},
+		{
+			"name": "Criptografar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Felippe Augusto Alacoque Rodrigues Mariano\",\r\n    \"email\":\"felippealacoque@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/criptografia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"criptografia"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
